@@ -1,1 +1,15 @@
-# good_food
+# HTML CSS BASİT TASARIM DENEMESİ 
+
+HTML - CSS VE JAVASCRİPT KULLANILMIŞTIR. KODLARIN AÇIKLAMALARI DOSYA İÇERİSİNDE YORUM SATIRLARI İLE BELİRİTİLMİŞTİR.
+
+
+
+https://user-images.githubusercontent.com/78982677/189115982-eb43fb25-2081-4a1b-92e9-ea90e11a12a7.mp4
+
+
+
+# RESPONSİVE GÖRÜNÜM  
+ 
+
+https://user-images.githubusercontent.com/78982677/189116023-1f9651f1-c0b9-422c-a5b1-6a41796b28a5.mp4
+
