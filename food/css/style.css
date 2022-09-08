@@ -1,0 +1,372 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior:smooth;
+}
+
+section
+{
+    position: relative;
+    width: 100%; 
+    min-height: 630px;  
+    padding-right: 100px; 
+    padding-left: 100px;
+    padding-top: 50px;
+    display: flex;  
+    background-color: white;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+}
+
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul
+{
+    z-index: 4;
+    position: relative;
+    display: flex;
+    margin-right: 190px;
+}
+
+header ul li
+{
+    list-style: none; 
+}
+
+header ul li a 
+{
+   
+    color: #32342F;
+    margin-left: 90px;
+    text-decoration: none; 
+    font-weight: bold;  
+    
+}
+
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.content .textBox h2
+{
+    color: #333;  
+    font-size: 3.5em; 
+    line-height: 1.4em; 
+    font-weight: 500;  
+}
+
+.content .textBox h2 span
+{
+    color: #E58E09;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.content .textBox p 
+{
+    color: #333;
+    margin-top: 30px;  
+}
+
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;  
+    padding:  8px 20px;
+    background:#E58E09;  
+    color: #fff;
+    border-radius: 40px; 
+    font-weight: 500;
+    letter-spacing: 1px;  
+    text-decoration: none;
+}
+
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.content .imgBox img 
+{
+    max-width: 580px;
+}
+
+.icons
+{
+    position:absolute;
+    top: 55%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    z-index: 4;
+}
+
+.icons li
+{
+    list-style: none;
+}
+
+.icons li a
+{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);  
+
+}
+
+.icons li a:hover
+{
+    filter: invert(1); 
+
+}
+
+
+.right-shape 
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #32342F;
+    clip-path: circle(600px at right 600px); 
+
+}
+
+.top-shape 
+{
+    z-index: 3;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E58E09;
+    clip-path: ellipse(21% 25% at 91% 8%);
+    
+}
+
+/* RESİM GALERİSİ CSS*/
+
+.swiper {
+    width: 500px;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*  responsive  */
+
+  @media screen and (max-width: 991px) 
+    {
+        .top-shape 
+        {
+            clip-path: ellipse(22% 15% at 98% 2%);
+        }
+        .right-shape 
+        {
+            clip-path: circle(450px at center bottom);
+        }
+        .circle-shape
+        {
+            clip-path: circle(400px at center top);
+        }
+        .text span 
+        {
+            color: white;
+            font-size: large;
+            position: absolute;
+            margin:0;
+            z-index: 2;
+            top: 100px;
+        }
+
+        .text p {
+            color: white;
+            font-size:larger;
+            text-align: center;
+            position: absolute;
+            margin: 0;
+            margin-left: 20px;
+            top: 20px;
+            z-index: 2;
+        }
+
+        .text img {
+           display: none;
+        }
+
+        .text a {
+            top: 40%;
+            margin: 0;
+            z-index: 2;
+        }
+
+        .container .img-box video 
+        {
+            position: absolute;
+            top: 70%;
+            height: 400px;
+            width: 400px;
+            margin-left: 50px;
+            object-fit: cover;
+            z-index: 4;
+        }
+
+        .container .img-box img 
+        {
+            position: absolute;
+            margin-left: 50px;
+            top: 70%;
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            z-index: 4;
+        }
+
+        header
+        {
+            padding: 30px;
+        }
+        section{
+            padding: 120px 20px;
+        }
+        .icons
+        {
+            right: 0px;
+            top: 70%;
+            padding: 0;
+        }
+        .content
+        {
+            flex-direction: column;
+        }
+        .swiper-slide .swiper
+        {
+            background-position: center;
+            background-size: cover;
+            width: 180px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .content .textBox ,  .content .imgBox
+        {
+            top: 40px;
+            max-width: 100%;
+            font-size:x-small;
+        }
+        .content .textBox p
+        {
+            font-size: large;
+            top: 100px 
+        }
+         header .navigation
+        {
+            display: none;
+            z-index: 10;
+            
+        }
+        header .navigation.active
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #fff;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        header .navigation li a
+        {
+           margin: 10px 0;
+           font-size: 1.5em;
+           color: #E58E09;
+           font-weight: 300px;
+
+        }
+        .toggle
+        {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: url(https://i.hizliresim.com/5bow339.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .toggle.active
+        {
+            
+            background: url(https://i.hizliresim.com/qrhouh3.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .swiper{
+            top: 60px;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+
+
+
+
+
+    }

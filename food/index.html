@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD FOOD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"  />
+    <script src="https://use.fontawesome.com/692b2196ce.js"></script>
+<body>
+    <section id="home">
+        <div class="right-shape"></div>
+        <div class="top-shape"></div>
+        <header>
+            <a href="#" ><img src="img/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Menü</a></li>
+                <li><a href="#">Yeni Tadlar</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li><i class="fa fa-heart fa-lg" aria-hidden="true" style="margin-right: -100px;margin-left: 100px; color: white;"></i></li>
+                <li><i class="fa fa-language fa-lg" aria-hidden="true" style="margin-right: -160px;margin-left: 200px;color: white;"></i></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>“Yaşamak için yiyoruz, <br>yemek için yaşamıyoruz.”<br>
+                  <span style="color:#E58E09">~HİPOKRAT~</span>
+                </h2> 
+                <p>
+                  🎤Kimi zaman unutmak, kimi zaman hatırlamak için kurulan sofralar... Azınlık mutfağını temeline koyan kitaplardan yola çıkarak geçmişe, 😋🍲leziz yemeklere ve olması gereken geleceğe uzandık... 📅
+                  Yemek arkadaştır, 👯‍♂️🤼‍♂️ ailedir, muhabbettir, geçmiştir, gelecektir, tarihtir, coğrafyadır 🌍, yerine göre bilgeliktir, karakterdir, neşedir...🥰 Yemek birleşmedir de...
+                </p>
+                <a href="#">Daha fazla bilgi edin</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper swiper-1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/img1.png"></div>
+                      <div class="swiper-slide"><img src="img/img2.png"></div>
+                      <div class="swiper-slide"><img src="img/img3.png"></div>
+                      <div class="swiper-slide"><img src="img/img4.png"></div>
+                      <div class="swiper-slide"><img src="img/img5.png"></div>
+                      <div class="swiper-slide"><img src="img/img6.png"></div>
+                    </div>
+                  </div>
+             </div>
+             <ul class="icons">
+                <li><a href="#"><img src="img/facebook.png"></a></li>
+                <li><a href="#"><img src="img/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/mustafa_basdemirr/"><img src="img/instagram.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/mustafa-basdemir/"><img src="img/linkedin.png"></a></li>
+                <li><a href="https://github.com/mustafabasdemir"><img src="img/github.png"></a></li>
+            </ul>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+     new Swiper('.swiper-1', {
+      grabCursor: true,
+      effect: 'creative',
+      creativeEffect: {
+        prev: {
+          translate: [0, 0, -400],
+        },
+        next: {
+          translate: ['100%', 0, 0]
+        }
+      }
+    });
+
+    //responsive menu
+    function toggleMenu()
+    {
+      const menuToggle = document.querySelector('.toggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+    }
+
+
+  </script>
+</body>
+</html>
